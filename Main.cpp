@@ -30,7 +30,7 @@ int main()
 
     while (gameWindowManager.isGameRunning())
     {
-        //gameWindowManager.render();
+        gameWindowManager.render();
     }
 
     return 0;
