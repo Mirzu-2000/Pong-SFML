@@ -16,7 +16,7 @@ namespace Core {
 	{
 		//Create the Window with specified dimensions and title
 		game_window->create(VideoMode(game_window_width, game_window_hight), game_title);
-				
+		//game_window->create(VideoMode::getDesktopMode(), game_title, Style::Fullscreen);
 	}
 
 
@@ -29,7 +29,13 @@ namespace Core {
 
 	void GameWindowManager::render()
 	{
-		//Later
+		// Clear the window with the orange color(R:200,G:50,B:50,A:255)
+		game_window->clear(Color(200, 50, 50, 255));
+
+		// draw
+
+		// Display the changes
+		game_window->display();
 	}
 
 	RenderWindow* GameWindowManager::getGameWindow() {
