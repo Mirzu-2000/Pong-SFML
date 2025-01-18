@@ -27,20 +27,23 @@ namespace Core {
 
 	}
 
-	void GameWindowManager::render()
+	
+
+	RenderWindow* GameWindowManager::getGameWindow() 
 	{
-		// Clear the window with the orange color(R:200,G:50,B:50,A:255)
-		game_window->clear(Color(200, 50, 50, 255));
-
-
-		// draw
-
-		// Display the changes
-		game_window->display();
-	}
-
-	RenderWindow* GameWindowManager::getGameWindow() {
 		return game_window;
 	}
+
+	void GameWindowManager::clearGameWindow()
+	{
+		game_window->clear(Color(200, 50, 50, 255));
+
+	}
+
+	void GameWindowManager::displayGameWindow()
+	{
+		return game_window->display();
+	}
+
 
 }

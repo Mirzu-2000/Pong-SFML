@@ -8,7 +8,7 @@ namespace Core {
 	class GameWindowManager {
 
 	private:
-		int game_window_width = 1208;
+		int game_window_width =  1280 ;
 		int game_window_hight = 720;
 
 		std::string game_title = "SFML-Pong!";
@@ -23,7 +23,9 @@ namespace Core {
 		void initialize();
 		RenderWindow* getGameWindow();
 		bool isGameRunning();
-		void render();
+		void clearGameWindow();
+		void displayGameWindow();
+		//void render();
 
 
 	};
