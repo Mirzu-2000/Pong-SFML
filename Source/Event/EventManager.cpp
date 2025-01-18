@@ -5,7 +5,7 @@ using namespace sf;
 
 namespace Events {
 
-
+	
 	void EventManager::pollEvents(RenderWindow* game_window)
 	{
 		sf::Event event;
@@ -13,6 +13,7 @@ namespace Events {
 		while (game_window->pollEvent(event))
 		{
 			if (event.type == sf::Event::Closed)
+	
 			{
 				game_window->close();
 			}
